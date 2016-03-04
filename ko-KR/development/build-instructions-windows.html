@@ -1,0 +1,1075 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>빌드 설명서 (Windows) | FAQ</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="Imfly">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../development/build-instructions-linux.html" />
+    
+    
+    <link rel="prev" href="../development/build-instructions-osx.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="52"
+        data-chapter-title="빌드 설명서 (Windows)"
+        data-filepath="development/build-instructions-windows.md"
+        data-basepath=".."
+        data-revision="Sat Mar 05 2016 00:40:09 GMT+0800 (CST)"
+        data-innerlanguage="ko-KR">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        소개
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="faq/electron-faq.html">
+            
+                
+                    <a href="../faq/electron-faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Electron FAQ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="tutorial/supported-platforms.html">
+            
+                
+                    <a href="../tutorial/supported-platforms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        지원하는 플랫폼
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tutorial/application-distribution.html">
+            
+                
+                    <a href="../tutorial/application-distribution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        어플리케이션 배포
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tutorial/mac-app-store-submission-guide.html">
+            
+                
+                    <a href="../tutorial/mac-app-store-submission-guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Mac 앱스토어 어플리케이션 제출 가이드
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="tutorial/application-packaging.html">
+            
+                
+                    <a href="../tutorial/application-packaging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        어플리케이션 패키징
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="tutorial/using-native-node-modules.html">
+            
+                
+                    <a href="../tutorial/using-native-node-modules.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        네이티브 Node 모듈 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="tutorial/debugging-main-process.html">
+            
+                
+                    <a href="../tutorial/debugging-main-process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        메인 프로세스 디버깅하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="tutorial/using-selenium-and-webdriver.html">
+            
+                
+                    <a href="../tutorial/using-selenium-and-webdriver.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Selenium 과 WebDriver 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="tutorial/devtools-extension.html">
+            
+                
+                    <a href="../tutorial/devtools-extension.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        개발자 도구 확장 기능
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="tutorial/using-pepper-flash-plugin.html">
+            
+                
+                    <a href="../tutorial/using-pepper-flash-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Pepper 플래시 플러그인 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="tutorial/using-widevine-cdm-plugin.html">
+            
+                
+                    <a href="../tutorial/using-widevine-cdm-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Widevine CDM 플러그인 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="tutorial/testing-on-headless-ci.html">
+            
+                
+                    <a href="../tutorial/testing-on-headless-ci.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Headless CI 시스템에서 테스팅하기 (Travis, Jenkins)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="tutorial/quick-start.html">
+            
+                
+                    <a href="../tutorial/quick-start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        시작하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="tutorial/desktop-environment-integration.html">
+            
+                
+                    <a href="../tutorial/desktop-environment-integration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        데스크톱 환경 통합
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="tutorial/online-offline-events.html">
+            
+                
+                    <a href="../tutorial/online-offline-events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        온라인/오프라인 이벤트 감지
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="api/synopsis.html">
+            
+                
+                    <a href="../api/synopsis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        개요
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="api/process.html">
+            
+                
+                    <a href="../api/process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        Process 객체
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="api/chrome-command-line-switches.html">
+            
+                
+                    <a href="../api/chrome-command-line-switches.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                        크롬 명령줄 스위치 지원
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" data-path="api/environment-variables.html">
+            
+                
+                    <a href="../api/environment-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                        환경 변수
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20" data-path="api/file-object.html">
+            
+                
+                    <a href="../api/file-object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                        `File` 객체
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="21" data-path="api/web-view-tag.html">
+            
+                
+                    <a href="../api/web-view-tag.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                        `&lt;webview&gt;` 태그
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" data-path="api/window-open.html">
+            
+                
+                    <a href="../api/window-open.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                        `window.open` 함수
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="23" data-path="api/app.html">
+            
+                
+                    <a href="../api/app.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                        app
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="24" data-path="api/auto-updater.html">
+            
+                
+                    <a href="../api/auto-updater.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                        autoUpdater
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="25" data-path="api/browser-window.html">
+            
+                
+                    <a href="../api/browser-window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                        BrowserWindow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="26" data-path="api/content-tracing.html">
+            
+                
+                    <a href="../api/content-tracing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                        contentTracing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="27" data-path="api/dialog.html">
+            
+                
+                    <a href="../api/dialog.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                        dialog
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="28" data-path="api/global-shortcut.html">
+            
+                
+                    <a href="../api/global-shortcut.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                        globalShortcut
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="29" data-path="api/ipc-main.html">
+            
+                
+                    <a href="../api/ipc-main.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                        ipcMain
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="30" data-path="api/menu.html">
+            
+                
+                    <a href="../api/menu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                        Menu
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31" data-path="api/menu-item.html">
+            
+                
+                    <a href="../api/menu-item.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                        MenuItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="32" data-path="api/power-monitor.html">
+            
+                
+                    <a href="../api/power-monitor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                        powerMonitor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="33" data-path="api/power-save-blocker.html">
+            
+                
+                    <a href="../api/power-save-blocker.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                        powerSaveBlocker
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="34" data-path="api/protocol.html">
+            
+                
+                    <a href="../api/protocol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                        protocol
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="35" data-path="api/session.html">
+            
+                
+                    <a href="../api/session.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                        session
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="36" data-path="api/web-contents.html">
+            
+                
+                    <a href="../api/web-contents.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                        webContents
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="37" data-path="api/tray.html">
+            
+                
+                    <a href="../api/tray.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>37.</b>
+                        
+                        Tray
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="38" data-path="api/desktop-capturer.html">
+            
+                
+                    <a href="../api/desktop-capturer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>38.</b>
+                        
+                        desktopCapturer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="39" data-path="api/ipc-renderer.html">
+            
+                
+                    <a href="../api/ipc-renderer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>39.</b>
+                        
+                        ipcRenderer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="40" data-path="api/remote.html">
+            
+                
+                    <a href="../api/remote.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>40.</b>
+                        
+                        remote
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="41" data-path="api/web-frame.html">
+            
+                
+                    <a href="../api/web-frame.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>41.</b>
+                        
+                        webFrame
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="42" data-path="api/clipboard.html">
+            
+                
+                    <a href="../api/clipboard.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>42.</b>
+                        
+                        clipboard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="43" data-path="api/crash-reporter.html">
+            
+                
+                    <a href="../api/crash-reporter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>43.</b>
+                        
+                        crashReporter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="44" data-path="api/native-image.html">
+            
+                
+                    <a href="../api/native-image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>44.</b>
+                        
+                        nativeImage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="45" data-path="api/screen.html">
+            
+                
+                    <a href="../api/screen.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>45.</b>
+                        
+                        screen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="46" data-path="api/shell.html">
+            
+                
+                    <a href="../api/shell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>46.</b>
+                        
+                        shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="47" data-path="development/coding-style.html">
+            
+                
+                    <a href="../development/coding-style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>47.</b>
+                        
+                        코딩 스타일
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="48" data-path="development/source-code-directory-structure.html">
+            
+                
+                    <a href="../development/source-code-directory-structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>48.</b>
+                        
+                        소스 코드 디렉터리 구조
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="49" data-path="development/atom-shell-vs-node-webkit.html">
+            
+                
+                    <a href="../development/atom-shell-vs-node-webkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>49.</b>
+                        
+                        NW.js(node-webkit)와 기술적으로 다른점
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="50" data-path="development/build-system-overview.html">
+            
+                
+                    <a href="../development/build-system-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>50.</b>
+                        
+                        빌드 시스템 개요
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="51" data-path="development/build-instructions-osx.html">
+            
+                
+                    <a href="../development/build-instructions-osx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>51.</b>
+                        
+                        빌드 설명서 (OS X)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="52" data-path="development/build-instructions-windows.html">
+            
+                
+                    <a href="../development/build-instructions-windows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>52.</b>
+                        
+                        빌드 설명서 (Windows)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="53" data-path="development/build-instructions-linux.html">
+            
+                
+                    <a href="../development/build-instructions-linux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>53.</b>
+                        
+                        빌드 설명서 (Linux)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="54" data-path="development/setting-up-symbol-server.html">
+            
+                
+                    <a href="../development/setting-up-symbol-server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>54.</b>
+                        
+                        디버거에서 디버그 심볼 서버 설정
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    GitBook에 게시
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >FAQ</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#xBE4C;&#xB4DC;-&#xC124;&#xBA85;&#xC11C;-windows">&#xBE4C;&#xB4DC; &#xC124;&#xBA85;&#xC11C; (Windows)</h1>
+<p>&#xC774; &#xAC00;&#xC774;&#xB4DC;&#xB294; Windows &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xC5D0;&#xC11C; Electron&#xC744; &#xBE4C;&#xB4DC;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC744; &#xC124;&#xBA85;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xBE4C;&#xB4DC;&#xC804;-&#xC694;&#xAD6C;-&#xC0AC;&#xD56D;">&#xBE4C;&#xB4DC;&#xC804; &#xC694;&#xAD6C; &#xC0AC;&#xD56D;</h2>
+<ul>
+<li>Windows 7 / Server 2008 R2 &#xB610;&#xB294; &#xCD5C;&#xC2E0; &#xBC84;&#xC804;</li>
+<li>Visual Studio 2013 Update 4 - <a href="https://www.visualstudio.com/news/vs2013-community-vs" target="_blank">VS 2013 &#xCEE4;&#xBBA4;&#xB2C8;&#xD2F0; &#xC5D0;&#xB514;&#xC158; &#xBB34;&#xB8CC; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;</a></li>
+<li><a href="http://www.python.org/download/releases/2.7/" target="_blank">Python 2.7</a></li>
+<li><a href="http://nodejs.org/download/" target="_blank">Node.js</a></li>
+<li><a href="http://git-scm.com" target="_blank">Git</a></li>
+</ul>
+<p>&#xD604;&#xC7AC; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294; PC&#xC5D0; Windows&#xB97C; &#xC124;&#xCE58;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74; <a href="https://www.modern.ie/en-us/virtualization-tools#downloads" target="_blank">modern.ie</a>&#xC5D0;&#xC11C;
+&#xC0AC;&#xC6A9; &#xAE30;&#xD55C;&#xC774; &#xC815;&#xD574;&#xC838;&#xC788;&#xB294; &#xBB34;&#xB8CC; &#xAC00;&#xC0C1;&#xBA38;&#xC2E0; &#xBC84;&#xC804;&#xC758; Windows&#xB97C; &#xBC1B;&#xC544; Electron&#xC744; &#xBE4C;&#xB4DC;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xB3C4;
+&#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>Electron&#xC740; &#xBAA8;&#xB4E0; &#xBE4C;&#xB4DC;&#xB97C; command-line &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xD1B5;&#xD574; &#xBE4C;&#xB4DC;&#xD569;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xBE4C;&#xB4DC;&#xC5D0; Visual
+Studio&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xC5EC;&#xC804;&#xD788; Electron&#xC744; &#xAC1C;&#xBC1C;&#xD560; &#xB550; &#xC5B4;&#xB5A4; &#xC5D0;&#xB514;&#xD130;&#xB4E0; &#xC0AC;&#xC6A9;&#xC774;
+&#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xBE60;&#xB978; &#xC2DC;&#xC77C;&#xB0B4;&#xC5D0; Visual Studio&#xB97C; &#xC774;&#xC6A9;&#xD55C; &#xBE4C;&#xB4DC;&#xB3C4; &#xC9C0;&#xC6D0;&#xD560; &#xACC4;&#xD68D;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><strong>&#xCC38;&#xACE0;:</strong> Visual Studio&#xAC00; &#xC9C1;&#xC811; &#xBE4C;&#xB4DC;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xB354;&#xB77C;&#xB3C4; IDE&#xC640; &#xAC19;&#xC774; &#xC81C;&#xACF5;&#xB41C; &#xBE4C;&#xB4DC;
+&#xD234;&#xCCB4;&#xC778;&#xC774; &#xBE4C;&#xB4DC;&#xC5D0; <strong>&#xBC18;&#xB4DC;&#xC2DC;</strong> &#xC0AC;&#xC6A9;&#xB418;&#xBBC0;&#xB85C; &#xC5EC;&#xC804;&#xD788; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><strong>&#xCC38;&#xACE0;:</strong> Visual Studio 2015&#xB294; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4; MSVS <strong>2013</strong> &#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294;&#xC9C0;
+&#xD655;&#xC778;&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+<h2 id="&#xCF54;&#xB4DC;-&#xAC00;&#xC838;&#xC624;&#xAE30;">&#xCF54;&#xB4DC; &#xAC00;&#xC838;&#xC624;&#xAE30;</h2>
+<pre><code class="lang-powershell">$ git clone https://github.com/atom/electron.git
+</code></pre>
+<h2 id="&#xBD80;&#xD2B8;-&#xC2A4;&#xD2B8;&#xB7A9;">&#xBD80;&#xD2B8; &#xC2A4;&#xD2B8;&#xB7A9;</h2>
+<p>&#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB294; &#xD544;&#xC218;&#xC801;&#xC778; &#xBE4C;&#xB4DC; &#xC885;&#xC18D;&#xC131; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB4E4;&#xC744; &#xBAA8;&#xB450; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xD558;&#xACE0; &#xD504;&#xB85C;&#xC81D;&#xD2B8;
+&#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;. &#xCC38;&#xACE0;&#xB85C; Electron&#xC740; <code>ninja</code>&#xB97C; &#xBE4C;&#xB4DC; &#xD234;&#xCCB4;&#xC778;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xBBC0;&#xB85C; Visual
+Studio &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB294; &#xC0DD;&#xC131;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-powershell">$ cd electron
+$ python script\bootstrap.py -v
+</code></pre>
+<h2 id="&#xBE4C;&#xB4DC;-&#xD558;&#xAE30;">&#xBE4C;&#xB4DC; &#xD558;&#xAE30;</h2>
+<p><code>Release</code> &#xC640; <code>Debug</code> &#xB450; &#xD0C0;&#xAC9F; &#xBAA8;&#xB450; &#xBE4C;&#xB4DC; &#xD569;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-powershell">$ python script\build.py
+</code></pre>
+<p>&#xB610;&#xB294; <code>Debug</code> &#xD0C0;&#xAC9F;&#xB9CC; &#xBE4C;&#xB4DC; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-powershell">$ python script\build.py -c D
+</code></pre>
+<p>&#xBE4C;&#xB4DC;&#xAC00; &#xBAA8;&#xB450; &#xB05D;&#xB098;&#xBA74; <code>out/D</code> (&#xB514;&#xBC84;&#xADF8; &#xD0C0;&#xAC9F;) &#xB610;&#xB294; <code>out/R</code> (&#xB9B4;&#xB9AC;&#xC988; &#xD0C0;&#xAC9F;) &#xB514;&#xB809;&#xD130;&#xB9AC;&#xC5D0;&#xC11C;
+<code>electron.exe</code> &#xC2E4;&#xD589; &#xD30C;&#xC77C;&#xC744; &#xCC3E;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="64&#xBE44;&#xD2B8;-&#xBE4C;&#xB4DC;">64&#xBE44;&#xD2B8; &#xBE4C;&#xB4DC;</h2>
+<p>64&#xBE44;&#xD2B8;&#xB97C; &#xD0C0;&#xAC9F;&#xC73C;&#xB85C; &#xBE4C;&#xB4DC; &#xD558;&#xB824;&#xBA74; &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD560; &#xB54C; <code>--target_arch=x64</code>
+&#xC778;&#xC790;&#xB97C; &#xAC19;&#xC774; &#xB118;&#xACA8;&#xC8FC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-powershell">$ python script\bootstrap.py -v --target_arch=x64
+</code></pre>
+<p>&#xB2E4;&#xB978; &#xBE4C;&#xB4DC; &#xB2E8;&#xACC4;&#xB3C4; &#xC815;&#xD655;&#xD558;&#xAC8C; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xD14C;&#xC2A4;&#xD2B8;">&#xD14C;&#xC2A4;&#xD2B8;</h2>
+<p>&#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xCF54;&#xB529; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xD655;&#xC778;&#xD558;&#xB824;&#xBA74;:</p>
+<pre><code class="lang-powershell">$ python script\cpplint.py
+</code></pre>
+<p>&#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB824;&#xBA74;:</p>
+<pre><code class="lang-powershell">$ python script\test.py
+</code></pre>
+<p>&#xD14C;&#xC2A4;&#xD2B8; &#xC2E4;&#xD589;&#xC2DC; <code>runas</code>&#xC640; &#xAC19;&#xC740; &#xB124;&#xC774;&#xD2F0;&#xBE0C; &#xBAA8;&#xB4C8;&#xC744; &#xD3EC;&#xD568;&#xD558;&#xB294;&#xB370; &#xC774; &#xBAA8;&#xB4C8;&#xC740; &#xB514;&#xBC84;&#xADF8; &#xBE4C;&#xB4DC;&#xC5D0;&#xC11C; &#xAC19;&#xC774;
+&#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xC5EC;&#xC804;&#xD788; &#xB9B4;&#xB9AC;&#xC988; &#xBE4C;&#xB4DC;&#xC5D0;&#xC120; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9B4;&#xB9AC;&#xC988; &#xBE4C;&#xB4DC;&#xB85C; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C; &#xCEE4;&#xB9E8;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-powershell">$ python script\test.py -R
+</code></pre>
+<h2 id="&#xBB38;&#xC81C;-&#xD574;&#xACB0;">&#xBB38;&#xC81C; &#xD574;&#xACB0;</h2>
+<h3 id="command-xxxx-not-found">Command xxxx not found</h3>
+<p>&#xB9CC;&#xC57D; <code>Command xxxx not found</code>&#xC640; &#xAC19;&#xC740; &#xD615;&#xC2DD;&#xC758; &#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD588;&#xB2E4;&#xBA74;
+<code>VS2012 Command Prompt</code> &#xCF58;&#xC194;&#xB85C; &#xBE4C;&#xB4DC; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD574;&#xBCFC; &#xD544;&#xC694;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="fatal-internal-compiler-error-c1001">Fatal internal compiler error: C1001</h3>
+<p>Visual Studio&#xAC00; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xAE4C;&#xC9C0; &#xC644;&#xBCBD;&#xD558;&#xAC8C; &#xC124;&#xCE58;&#xB41C; &#xCD5C;&#xC2E0;&#xBC84;&#xC804;&#xC778;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xC138;&#xC694;.</p>
+<h3 id="assertion-failed-handleactivecnt--0">Assertion failed: ((handle))-&gt;activecnt &gt;= 0</h3>
+<p>Cygwin&#xC5D0;&#xC11C; &#xBE4C;&#xB4DC; &#xD560; &#xACBD;&#xC6B0; <code>bootstrap.py</code> &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xAC00; &#xB2E4;&#xC74C;&#xC758; &#xC5D0;&#xB7EC;&#xC640; &#xD568;&#xAED8; &#xBE4C;&#xB4DC;&#xC5D0; &#xC2E4;&#xD328;&#xD560; &#xC218;
+&#xC788;&#xC2B5;&#xB2C8;&#xB2E4;:</p>
+<pre><code>Assertion failed: ((handle))-&gt;activecnt &gt;= 0, file src\win\pipe.c, line 1430
+
+Traceback (most recent call last):
+  File &quot;script/bootstrap.py&quot;, line 87, in &lt;module&gt;
+    sys.exit(main())
+  File &quot;script/bootstrap.py&quot;, line 22, in main
+    update_node_modules(&apos;.&apos;)
+  File &quot;script/bootstrap.py&quot;, line 56, in update_node_modules
+    execute([NPM, &apos;install&apos;])
+  File &quot;/home/zcbenz/codes/raven/script/lib/util.py&quot;, line 118, in execute
+    raise e
+subprocess.CalledProcessError: Command &apos;[&apos;npm.cmd&apos;, &apos;install&apos;]&apos; returned non-zero exit status 3
+</code></pre><p>&#xC774; &#xBC84;&#xADF8;&#xB294; Cygwin Python&#xACFC; Win32 Node&#xB97C; &#xAC19;&#xC774; &#xC0AC;&#xC6A9;&#xD560; &#xB54C; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xBD80;&#xD2B8;&#xC2A4;&#xD2B8;&#xB7A9;
+&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C; Win32 Python&#xC744; &#xC0AC;&#xC6A9;&#xD568;&#xC73C;&#xB85C;&#xC368; &#xC774; &#xBB38;&#xC81C;&#xB97C; &#xD574;&#xACB0;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>C:\Python27</code>
+&#xB514;&#xB809;&#xD130;&#xB9AC;&#xC5D0; Python&#xC774; &#xC124;&#xCE58;&#xB418;&#xC5C8;&#xB2E4;&#xB294; &#xAC00;&#xC815;&#xD558;&#xC5D0; &#xB2E4;&#xC74C; &#xBA85;&#xB839;&#xC744; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-bash">$ /cygdrive/c/Python27/python.exe script/bootstrap.py
+</code></pre>
+<h3 id="lnk1181-cannot-open-input-file-kernel32lib">LNK1181: cannot open input file &apos;kernel32.lib&apos;</h3>
+<p>32&#xBE44;&#xD2B8; Node.js&#xB97C; &#xB2E4;&#xC2DC; &#xC124;&#xCE58;&#xD558;&#xC138;&#xC694;.</p>
+<h3 id="error-enoent-stat-cusersusernameappdataroamingnpm">Error: ENOENT, stat &apos;C:\Users\USERNAME\AppData\Roaming\npm&apos;</h3>
+<p>&#xAC04;&#xB2E8;&#xD558;&#xAC8C; &#xD574;&#xB2F9; &#xB514;&#xB809;&#xD130;&#xB9AC;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xBA74; <a href="http://stackoverflow.com/a/25095327/102704" target="_blank">&#xBB38;&#xC81C;&#xAC00; &#xD574;&#xACB0;&#xB420; &#xAC81;&#xB2C8;&#xB2E4;</a>:</p>
+<pre><code class="lang-powershell">$ mkdir ~\AppData\Roaming\npm
+</code></pre>
+<h3 id="nodegyp-is-not-recognized-as-an-internal-or-external-command">node-gyp is not recognized as an internal or external command</h3>
+<p>Git Bash&#xB85C; &#xBE4C;&#xB4DC; &#xD588;&#xC744; &#xB54C; &#xC774;&#xB7EC;&#xD55C; &#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC18;&#xB4DC;&#xC2DC; PowerShell&#xC774;&#xB098;
+VS2012 Command Prompt&#xC5D0;&#xC11C; &#xBE4C;&#xB4DC;&#xB97C; &#xC9C4;&#xD589;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../development/build-instructions-osx.html" class="navigation navigation-prev " aria-label="Previous page: 빌드 설명서 (OS X)"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../development/build-instructions-linux.html" class="navigation navigation-next " aria-label="Next page: 빌드 설명서 (Linux)"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"baidu":{"token":"acfc5cd60db044270ff996429917c2b7"},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?acfc5cd60db044270ff996429917c2b7';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+    </body>
+    
+</html>

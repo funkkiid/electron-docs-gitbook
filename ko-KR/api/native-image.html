@@ -1,0 +1,1087 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>nativeImage | FAQ</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="Imfly">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../api/screen.html" />
+    
+    
+    <link rel="prev" href="../api/crash-reporter.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="44"
+        data-chapter-title="nativeImage"
+        data-filepath="api/native-image.md"
+        data-basepath=".."
+        data-revision="Sat Mar 05 2016 00:40:09 GMT+0800 (CST)"
+        data-innerlanguage="ko-KR">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        소개
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="faq/electron-faq.html">
+            
+                
+                    <a href="../faq/electron-faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Electron FAQ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="tutorial/supported-platforms.html">
+            
+                
+                    <a href="../tutorial/supported-platforms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        지원하는 플랫폼
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tutorial/application-distribution.html">
+            
+                
+                    <a href="../tutorial/application-distribution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        어플리케이션 배포
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tutorial/mac-app-store-submission-guide.html">
+            
+                
+                    <a href="../tutorial/mac-app-store-submission-guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Mac 앱스토어 어플리케이션 제출 가이드
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="tutorial/application-packaging.html">
+            
+                
+                    <a href="../tutorial/application-packaging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        어플리케이션 패키징
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="tutorial/using-native-node-modules.html">
+            
+                
+                    <a href="../tutorial/using-native-node-modules.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        네이티브 Node 모듈 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="tutorial/debugging-main-process.html">
+            
+                
+                    <a href="../tutorial/debugging-main-process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        메인 프로세스 디버깅하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="tutorial/using-selenium-and-webdriver.html">
+            
+                
+                    <a href="../tutorial/using-selenium-and-webdriver.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Selenium 과 WebDriver 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="tutorial/devtools-extension.html">
+            
+                
+                    <a href="../tutorial/devtools-extension.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        개발자 도구 확장 기능
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="tutorial/using-pepper-flash-plugin.html">
+            
+                
+                    <a href="../tutorial/using-pepper-flash-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Pepper 플래시 플러그인 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="tutorial/using-widevine-cdm-plugin.html">
+            
+                
+                    <a href="../tutorial/using-widevine-cdm-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Widevine CDM 플러그인 사용하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="tutorial/testing-on-headless-ci.html">
+            
+                
+                    <a href="../tutorial/testing-on-headless-ci.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Headless CI 시스템에서 테스팅하기 (Travis, Jenkins)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="tutorial/quick-start.html">
+            
+                
+                    <a href="../tutorial/quick-start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        시작하기
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="tutorial/desktop-environment-integration.html">
+            
+                
+                    <a href="../tutorial/desktop-environment-integration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        데스크톱 환경 통합
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="tutorial/online-offline-events.html">
+            
+                
+                    <a href="../tutorial/online-offline-events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        온라인/오프라인 이벤트 감지
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="api/synopsis.html">
+            
+                
+                    <a href="../api/synopsis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        개요
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="api/process.html">
+            
+                
+                    <a href="../api/process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        Process 객체
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="api/chrome-command-line-switches.html">
+            
+                
+                    <a href="../api/chrome-command-line-switches.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                        크롬 명령줄 스위치 지원
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" data-path="api/environment-variables.html">
+            
+                
+                    <a href="../api/environment-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                        환경 변수
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20" data-path="api/file-object.html">
+            
+                
+                    <a href="../api/file-object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                        `File` 객체
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="21" data-path="api/web-view-tag.html">
+            
+                
+                    <a href="../api/web-view-tag.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                        `&lt;webview&gt;` 태그
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" data-path="api/window-open.html">
+            
+                
+                    <a href="../api/window-open.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                        `window.open` 함수
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="23" data-path="api/app.html">
+            
+                
+                    <a href="../api/app.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                        app
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="24" data-path="api/auto-updater.html">
+            
+                
+                    <a href="../api/auto-updater.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                        autoUpdater
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="25" data-path="api/browser-window.html">
+            
+                
+                    <a href="../api/browser-window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                        BrowserWindow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="26" data-path="api/content-tracing.html">
+            
+                
+                    <a href="../api/content-tracing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                        contentTracing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="27" data-path="api/dialog.html">
+            
+                
+                    <a href="../api/dialog.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                        dialog
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="28" data-path="api/global-shortcut.html">
+            
+                
+                    <a href="../api/global-shortcut.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                        globalShortcut
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="29" data-path="api/ipc-main.html">
+            
+                
+                    <a href="../api/ipc-main.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                        ipcMain
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="30" data-path="api/menu.html">
+            
+                
+                    <a href="../api/menu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                        Menu
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31" data-path="api/menu-item.html">
+            
+                
+                    <a href="../api/menu-item.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                        MenuItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="32" data-path="api/power-monitor.html">
+            
+                
+                    <a href="../api/power-monitor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                        powerMonitor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="33" data-path="api/power-save-blocker.html">
+            
+                
+                    <a href="../api/power-save-blocker.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                        powerSaveBlocker
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="34" data-path="api/protocol.html">
+            
+                
+                    <a href="../api/protocol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                        protocol
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="35" data-path="api/session.html">
+            
+                
+                    <a href="../api/session.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                        session
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="36" data-path="api/web-contents.html">
+            
+                
+                    <a href="../api/web-contents.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                        webContents
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="37" data-path="api/tray.html">
+            
+                
+                    <a href="../api/tray.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>37.</b>
+                        
+                        Tray
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="38" data-path="api/desktop-capturer.html">
+            
+                
+                    <a href="../api/desktop-capturer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>38.</b>
+                        
+                        desktopCapturer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="39" data-path="api/ipc-renderer.html">
+            
+                
+                    <a href="../api/ipc-renderer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>39.</b>
+                        
+                        ipcRenderer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="40" data-path="api/remote.html">
+            
+                
+                    <a href="../api/remote.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>40.</b>
+                        
+                        remote
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="41" data-path="api/web-frame.html">
+            
+                
+                    <a href="../api/web-frame.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>41.</b>
+                        
+                        webFrame
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="42" data-path="api/clipboard.html">
+            
+                
+                    <a href="../api/clipboard.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>42.</b>
+                        
+                        clipboard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="43" data-path="api/crash-reporter.html">
+            
+                
+                    <a href="../api/crash-reporter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>43.</b>
+                        
+                        crashReporter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="44" data-path="api/native-image.html">
+            
+                
+                    <a href="../api/native-image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>44.</b>
+                        
+                        nativeImage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="45" data-path="api/screen.html">
+            
+                
+                    <a href="../api/screen.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>45.</b>
+                        
+                        screen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="46" data-path="api/shell.html">
+            
+                
+                    <a href="../api/shell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>46.</b>
+                        
+                        shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="47" data-path="development/coding-style.html">
+            
+                
+                    <a href="../development/coding-style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>47.</b>
+                        
+                        코딩 스타일
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="48" data-path="development/source-code-directory-structure.html">
+            
+                
+                    <a href="../development/source-code-directory-structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>48.</b>
+                        
+                        소스 코드 디렉터리 구조
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="49" data-path="development/atom-shell-vs-node-webkit.html">
+            
+                
+                    <a href="../development/atom-shell-vs-node-webkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>49.</b>
+                        
+                        NW.js(node-webkit)와 기술적으로 다른점
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="50" data-path="development/build-system-overview.html">
+            
+                
+                    <a href="../development/build-system-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>50.</b>
+                        
+                        빌드 시스템 개요
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="51" data-path="development/build-instructions-osx.html">
+            
+                
+                    <a href="../development/build-instructions-osx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>51.</b>
+                        
+                        빌드 설명서 (OS X)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="52" data-path="development/build-instructions-windows.html">
+            
+                
+                    <a href="../development/build-instructions-windows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>52.</b>
+                        
+                        빌드 설명서 (Windows)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="53" data-path="development/build-instructions-linux.html">
+            
+                
+                    <a href="../development/build-instructions-linux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>53.</b>
+                        
+                        빌드 설명서 (Linux)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="54" data-path="development/setting-up-symbol-server.html">
+            
+                
+                    <a href="../development/setting-up-symbol-server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>54.</b>
+                        
+                        디버거에서 디버그 심볼 서버 설정
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    GitBook에 게시
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >FAQ</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="nativeimage">nativeImage</h1>
+<p>Electron&#xC740; &#xD30C;&#xC77C; &#xACBD;&#xB85C; &#xB610;&#xB294; <code>nativeImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xD1B5;&#xD574; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; API&#xB97C;
+&#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <code>null</code>&#xC744; &#xC804;&#xB2EC;&#xD560; &#xACBD;&#xC6B0; &#xBE48; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xD2B8;&#xB808;&#xC774; &#xBA54;&#xB274;&#xB97C; &#xB9CC;&#xB4E4;&#xAC70;&#xB098; &#xC708;&#xB3C4;&#xC6B0;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC124;&#xC815;&#xD560; &#xB54C; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xD30C;&#xC77C; &#xACBD;&#xB85C;&#xB97C;
+&#xC804;&#xB2EC;&#xD558;&#xC5EC; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> appIcon = <span class="hljs-keyword">new</span> Tray(<span class="hljs-string">&apos;/Users/somebody/images/icon.png&apos;</span>);
+<span class="hljs-keyword">var</span> <span class="hljs-built_in">window</span> = <span class="hljs-keyword">new</span> BrowserWindow({icon: <span class="hljs-string">&apos;/Users/somebody/images/window.png&apos;</span>});
+</code></pre>
+<p>&#xC774; &#xC608;&#xC81C;&#xB294; &#xD074;&#xB9BD;&#xBCF4;&#xB4DC;&#xB85C;&#xBD80;&#xD130; &#xAC00;&#xC838;&#xC628; <code>nativeImage</code>&#xB85C; &#xD2B8;&#xB808;&#xC774; &#xBA54;&#xB274;&#xB97C; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> image = clipboard.readImage();
+<span class="hljs-keyword">var</span> appIcon = <span class="hljs-keyword">new</span> Tray(image);
+</code></pre>
+<h2 id="&#xC9C0;&#xC6D0;&#xD558;&#xB294;-&#xD3EC;&#xB9F7;">&#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xD3EC;&#xB9F7;</h2>
+<p>&#xD604;&#xC7AC; <code>PNG</code> &#xC640; <code>JPEG</code> &#xC774;&#xBBF8;&#xC9C0; &#xD3EC;&#xB9F7;&#xC744; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC190;&#xC2E4; &#xC5C6;&#xB294; &#xC774;&#xBBF8;&#xC9C0; &#xC555;&#xCD95;&#xACFC; &#xD22C;&#xBA85;&#xB3C4; &#xC9C0;&#xC6D0;&#xC744; &#xC704;&#xD574; <code>PNG</code> &#xC0AC;&#xC6A9;&#xC744; &#xAD8C;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB9AC;&#xACE0; Windows&#xC5D0;&#xC11C;&#xB294; <code>ICO</code> &#xD3EC;&#xB9F7;&#xB3C4; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xACE0;&#xD574;&#xC0C1;&#xB3C4;-&#xC774;&#xBBF8;&#xC9C0;">&#xACE0;&#xD574;&#xC0C1;&#xB3C4; &#xC774;&#xBBF8;&#xC9C0;</h2>
+<p>&#xD50C;&#xB7AB;&#xD3FC;&#xC774; high-DPI&#xB97C; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xACBD;&#xC6B0; <code>@2x</code>&#xC640; &#xAC19;&#xC774; &#xC774;&#xBBF8;&#xC9C0;&#xC758; &#xD30C;&#xC77C;&#xBA85; &#xB4A4;&#xC5D0; &#xC811;&#xBBF8;&#xC0AC;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xC5EC;
+&#xACE0;&#xD574;&#xC0C1;&#xB3C4; &#xC774;&#xBBF8;&#xC9C0;&#xB85C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4; <code>icon.png</code> &#xB77C;&#xB294; &#xAE30;&#xBCF8; &#xD574;&#xC0C1;&#xB3C4;&#xC758; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD06C;&#xAE30;&#xB97C; &#xB450; &#xBC30;&#xB85C; &#xB298;&#xB9B0; &#xC774;&#xBBF8;&#xC9C0;&#xB97C;
+<code>icon@2x.png</code> &#xCC98;&#xB7FC; &#xC9C0;&#xC815;&#xD558;&#xBA74; &#xACE0;&#xD574;&#xC0C1;&#xB3C4; &#xC774;&#xBBF8;&#xC9C0;&#xB85C; &#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC11C;&#xB85C; &#xB2E4;&#xB978; &#xD574;&#xC0C1;&#xB3C4;(DPI)&#xC758; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xAC19;&#xC774; &#xC9C0;&#xC6D0;&#xD558;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; &#xB2E4;&#xC911; &#xD574;&#xC0C1;&#xB3C4;&#xC758; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC811;&#xBBF8;&#xC0AC;&#xB97C;
+&#xBD99;&#xC5EC; &#xD55C; &#xD3F4;&#xB354;&#xC5D0; &#xAC19;&#xC774; &#xB123;&#xC73C;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. &#xC774; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC0AC;&#xC6A9;(&#xB85C;&#xB4DC;)&#xD560; &#xB550; &#xB530;&#xB85C; &#xC811;&#xBBF8;&#xC0AC;&#xB97C; &#xBD99;&#xC774;&#xC9C0;
+&#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-text">images/
+&#x251C;&#x2500;&#x2500; icon.png
+&#x251C;&#x2500;&#x2500; icon@2x.png
+&#x2514;&#x2500;&#x2500; icon@3x.png
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> appIcon = <span class="hljs-keyword">new</span> Tray(<span class="hljs-string">&apos;/Users/somebody/images/icon.png&apos;</span>);
+</code></pre>
+<p>&#xC9C0;&#xC6D0;&#xD558;&#xB294; DPI &#xC811;&#xBBF8;&#xC0AC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;:</p>
+<ul>
+<li><code>@1x</code></li>
+<li><code>@1.25x</code></li>
+<li><code>@1.33x</code></li>
+<li><code>@1.4x</code></li>
+<li><code>@1.5x</code></li>
+<li><code>@1.8x</code></li>
+<li><code>@2x</code></li>
+<li><code>@2.5x</code></li>
+<li><code>@3x</code></li>
+<li><code>@4x</code></li>
+<li><code>@5x</code></li>
+</ul>
+<h2 id="&#xD15C;&#xD50C;&#xB9BF;-&#xC774;&#xBBF8;&#xC9C0;">&#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;</h2>
+<p>&#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xB294; &#xAC80;&#xC740;&#xC0C9;&#xACFC; &#xBA85;&#xD655;&#xD55C; &#xC0C9;&#xC0C1;(&#xC54C;&#xD30C; &#xCC44;&#xB110;)&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC838; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xB294;
+&#xB2E8;&#xB3C5; &#xC774;&#xBBF8;&#xC9C0;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xACE0; &#xB2E4;&#xB978; &#xCEE8;&#xD150;&#xCE20;&#xC640; &#xD63C;&#xD569;&#xB418;&#xC5B4; &#xCD5C;&#xC885; &#xC678;&#xAD00; &#xB9CC;&#xB4DC;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAC00;&#xC7A5; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xB294; &#xBC1D;&#xACE0; &#xC5B4;&#xB450;&#xC6B4; &#xD14C;&#xB9C8; &#xC0C9;&#xC0C1;&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xB294; &#xBA54;&#xB274; &#xBC14; &#xC544;&#xC774;&#xCF58;
+&#xB4F1;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><strong>&#xCC38;&#xACE0;:</strong> &#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xB294; OS X &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xB9CC; &#xC9C0;&#xC6D0;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC9C0;&#xC815;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C; &#xC608;&#xC81C;&#xC640; &#xAC19;&#xC774; &#xD30C;&#xC77C;&#xBA85;&#xC5D0; <code>Template</code> &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xCD94;&#xAC00;&#xD574;&#xC57C;
+&#xD569;&#xB2C8;&#xB2E4;:</p>
+<ul>
+<li><code>xxxTemplate.png</code></li>
+<li><code>xxxTemplate@2x.png</code></li>
+</ul>
+<h2 id="methods">Methods</h2>
+<p><code>nativeImage</code> &#xD074;&#xB798;&#xC2A4;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;:</p>
+<h3 id="nativeimagecreateempty"><code>nativeImage.createEmpty()</code></h3>
+<p>&#xBE48; <code>nativeImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xB9CC;&#xB4ED;&#xB2C8;&#xB2E4;.</p>
+<h3 id="nativeimagecreatefrompathpath"><code>nativeImage.createFromPath(path)</code></h3>
+<ul>
+<li><code>path</code> String</li>
+</ul>
+<p><code>path</code>&#xB85C;&#xBD80;&#xD130; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xB85C;&#xB4DC;&#xD558;&#xC5EC; &#xC0C8;&#xB85C;&#xC6B4; <code>nativeImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xB9CC;&#xB4ED;&#xB2C8;&#xB2E4;.</p>
+<h3 id="nativeimagecreatefrombufferbuffer-scalefactor"><code>nativeImage.createFromBuffer(buffer[, scaleFactor])</code></h3>
+<ul>
+<li><code>buffer</code> <a href="https://nodejs.org/api/buffer.html#buffer_class_buffer" target="_blank">Buffer</a></li>
+<li><code>scaleFactor</code> Double (optional)</li>
+</ul>
+<p><code>buffer</code>&#xB85C;&#xBD80;&#xD130; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xB85C;&#xB4DC;&#xD558;&#xC5EC; &#xC0C8;&#xB85C;&#xC6B4; <code>nativeImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xB9CC;&#xB4ED;&#xB2C8;&#xB2E4;.
+<code>scaleFactor</code>&#xC758; &#xAE30;&#xBCF8;&#xAC12;&#xC740; 1.0 &#xC785;&#xB2C8;&#xB2E4;.</p>
+<h3 id="nativeimagecreatefromdataurldataurl"><code>nativeImage.createFromDataURL(dataURL)</code></h3>
+<ul>
+<li><code>dataURL</code> String</li>
+</ul>
+<p><code>dataURL</code>&#xB85C;&#xBD80;&#xD130; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xB85C;&#xB4DC;&#xD558;&#xC5EC; &#xC0C8;&#xB85C;&#xC6B4; <code>nativeImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xB97C; &#xB9CC;&#xB4ED;&#xB2C8;&#xB2E4;.</p>
+<h2 id="instance-methods">Instance Methods</h2>
+<p><code>nativeImage</code> &#xC778;&#xC2A4;&#xD134;&#xC2A4; &#xAC1D;&#xCCB4;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; &#xBA54;&#xC11C;&#xB4DC; &#xC785;&#xB2C8;&#xB2E4;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> nativeImage = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>).nativeImage;
+
+<span class="hljs-keyword">var</span> image = nativeImage.createFromPath(<span class="hljs-string">&apos;/Users/somebody/images/icon.png&apos;</span>);
+</code></pre>
+<h3 id="imagetopng"><code>image.toPng()</code></h3>
+<p><code>PNG</code> &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC778;&#xCF54;&#xB529;&#xD55C; &#xB370;&#xC774;&#xD130;&#xB97C; <a href="https://nodejs.org/api/buffer.html#buffer_class_buffer" target="_blank">Buffer</a>&#xB85C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="imagetojpegquality"><code>image.toJpeg(quality)</code></h3>
+<ul>
+<li><code>quality</code> Integer (<strong>required</strong>) 0 - 100 &#xC0AC;&#xC774;&#xC758; &#xAC12;</li>
+</ul>
+<p><code>JPEG</code> &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC778;&#xCF54;&#xB529;&#xD55C; &#xB370;&#xC774;&#xD130;&#xB97C; <a href="https://nodejs.org/api/buffer.html#buffer_class_buffer" target="_blank">Buffer</a>&#xB85C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="imagetodataurl"><code>image.toDataURL()</code></h3>
+<p>&#xC774;&#xBBF8;&#xC9C0;&#xB97C; data URL&#xB85C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="imageisempty"><code>image.isEmpty()</code></h3>
+<p>&#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xBE44;&#xC5C8;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="imagegetsize"><code>image.getSize()</code></h3>
+<p>&#xC774;&#xBBF8;&#xC9C0;&#xC758; &#xC0AC;&#xC774;&#xC988;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="imagesettemplateimageoption"><code>image.setTemplateImage(option)</code></h3>
+<ul>
+<li><code>option</code> Boolean</li>
+</ul>
+<p>&#xD574;&#xB2F9; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xB85C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="imageistemplateimage"><code>image.isTemplateImage()</code></h3>
+<p>&#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xD15C;&#xD50C;&#xB9BF; &#xC774;&#xBBF8;&#xC9C0;&#xC778;&#xC9C0; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../api/crash-reporter.html" class="navigation navigation-prev " aria-label="Previous page: crashReporter"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../api/screen.html" class="navigation navigation-next " aria-label="Next page: screen"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"baidu":{"token":"acfc5cd60db044270ff996429917c2b7"},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?acfc5cd60db044270ff996429917c2b7';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+    </body>
+    
+</html>

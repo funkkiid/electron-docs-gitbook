@@ -1,0 +1,1082 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Supported Chrome Command Line Switches | FAQ</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="Imfly">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../api/environment-variables.html" />
+    
+    
+    <link rel="prev" href="../api/process.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="18"
+        data-chapter-title="Supported Chrome Command Line Switches"
+        data-filepath="api/chrome-command-line-switches.md"
+        data-basepath=".."
+        data-revision="Sat Mar 05 2016 00:40:04 GMT+0800 (CST)"
+        data-innerlanguage="en">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="faq/electron-faq.html">
+            
+                
+                    <a href="../faq/electron-faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Electron FAQ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="tutorial/supported-platforms.html">
+            
+                
+                    <a href="../tutorial/supported-platforms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Supported Platforms
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="tutorial/application-distribution.html">
+            
+                
+                    <a href="../tutorial/application-distribution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Application Distribution
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tutorial/mac-app-store-submission-guide.html">
+            
+                
+                    <a href="../tutorial/mac-app-store-submission-guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Mac App Store Submission Guide
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="tutorial/application-packaging.html">
+            
+                
+                    <a href="../tutorial/application-packaging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Application Packaging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="tutorial/using-native-node-modules.html">
+            
+                
+                    <a href="../tutorial/using-native-node-modules.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Using Native Node Modules
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="tutorial/debugging-main-process.html">
+            
+                
+                    <a href="../tutorial/debugging-main-process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Debugging Main Process
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="tutorial/using-selenium-and-webdriver.html">
+            
+                
+                    <a href="../tutorial/using-selenium-and-webdriver.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Using Selenium and WebDriver
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="tutorial/devtools-extension.html">
+            
+                
+                    <a href="../tutorial/devtools-extension.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        DevTools Extension
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="tutorial/using-pepper-flash-plugin.html">
+            
+                
+                    <a href="../tutorial/using-pepper-flash-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Using Pepper Flash Plugin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="tutorial/using-widevine-cdm-plugin.html">
+            
+                
+                    <a href="../tutorial/using-widevine-cdm-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Using Widevine CDM Plugin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="tutorial/testing-on-headless-ci.html">
+            
+                
+                    <a href="../tutorial/testing-on-headless-ci.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Testing on Headless CI Systems (Travis, Jenkins)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="tutorial/quick-start.html">
+            
+                
+                    <a href="../tutorial/quick-start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Quick Start
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="tutorial/desktop-environment-integration.html">
+            
+                
+                    <a href="../tutorial/desktop-environment-integration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        Desktop Environment Integration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="tutorial/online-offline-events.html">
+            
+                
+                    <a href="../tutorial/online-offline-events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        Online/Offline Event Detection
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="api/synopsis.html">
+            
+                
+                    <a href="../api/synopsis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        Synopsis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="api/process.html">
+            
+                
+                    <a href="../api/process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        Process Object
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="18" data-path="api/chrome-command-line-switches.html">
+            
+                
+                    <a href="../api/chrome-command-line-switches.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                        Supported Chrome Command Line Switches
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" data-path="api/environment-variables.html">
+            
+                
+                    <a href="../api/environment-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                        Environment Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20" data-path="api/file-object.html">
+            
+                
+                    <a href="../api/file-object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                        `File` Object
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="21" data-path="api/web-view-tag.html">
+            
+                
+                    <a href="../api/web-view-tag.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                        `&lt;webview&gt;` Tag
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" data-path="api/window-open.html">
+            
+                
+                    <a href="../api/window-open.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                        `window.open` Function
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="23" data-path="api/app.html">
+            
+                
+                    <a href="../api/app.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                        app
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="24" data-path="api/auto-updater.html">
+            
+                
+                    <a href="../api/auto-updater.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                        autoUpdater
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="25" data-path="api/browser-window.html">
+            
+                
+                    <a href="../api/browser-window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                        BrowserWindow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="26" data-path="api/content-tracing.html">
+            
+                
+                    <a href="../api/content-tracing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                        contentTracing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="27" data-path="api/dialog.html">
+            
+                
+                    <a href="../api/dialog.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                        dialog
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="28" data-path="api/global-shortcut.html">
+            
+                
+                    <a href="../api/global-shortcut.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                        globalShortcut
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="29" data-path="api/ipc-main.html">
+            
+                
+                    <a href="../api/ipc-main.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                        ipcMain
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="30" data-path="api/menu.html">
+            
+                
+                    <a href="../api/menu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                        Menu
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31" data-path="api/menu-item.html">
+            
+                
+                    <a href="../api/menu-item.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                        MenuItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="32" data-path="api/power-monitor.html">
+            
+                
+                    <a href="../api/power-monitor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                        powerMonitor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="33" data-path="api/power-save-blocker.html">
+            
+                
+                    <a href="../api/power-save-blocker.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                        powerSaveBlocker
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="34" data-path="api/protocol.html">
+            
+                
+                    <a href="../api/protocol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                        protocol
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="35" data-path="api/session.html">
+            
+                
+                    <a href="../api/session.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                        session
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="36" data-path="api/web-contents.html">
+            
+                
+                    <a href="../api/web-contents.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                        webContents
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="37" data-path="api/tray.html">
+            
+                
+                    <a href="../api/tray.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>37.</b>
+                        
+                        Tray
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="38" data-path="api/desktop-capturer.html">
+            
+                
+                    <a href="../api/desktop-capturer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>38.</b>
+                        
+                        desktopCapturer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="39" data-path="api/ipc-renderer.html">
+            
+                
+                    <a href="../api/ipc-renderer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>39.</b>
+                        
+                        ipcRenderer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="40" data-path="api/remote.html">
+            
+                
+                    <a href="../api/remote.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>40.</b>
+                        
+                        remote
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="41" data-path="api/web-frame.html">
+            
+                
+                    <a href="../api/web-frame.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>41.</b>
+                        
+                        webFrame
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="42" data-path="api/clipboard.html">
+            
+                
+                    <a href="../api/clipboard.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>42.</b>
+                        
+                        clipboard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="43" data-path="api/crash-reporter.html">
+            
+                
+                    <a href="../api/crash-reporter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>43.</b>
+                        
+                        crashReporter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="44" data-path="api/native-image.html">
+            
+                
+                    <a href="../api/native-image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>44.</b>
+                        
+                        nativeImage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="45" data-path="api/screen.html">
+            
+                
+                    <a href="../api/screen.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>45.</b>
+                        
+                        screen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="46" data-path="api/shell.html">
+            
+                
+                    <a href="../api/shell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>46.</b>
+                        
+                        shell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="47" data-path="development/coding-style.html">
+            
+                
+                    <a href="../development/coding-style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>47.</b>
+                        
+                        Coding Style
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="48" data-path="development/source-code-directory-structure.html">
+            
+                
+                    <a href="../development/source-code-directory-structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>48.</b>
+                        
+                        Source Code Directory Structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="49" data-path="development/atom-shell-vs-node-webkit.html">
+            
+                
+                    <a href="../development/atom-shell-vs-node-webkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>49.</b>
+                        
+                        Technical Differences to NW.js (formerly node-webkit)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="50" data-path="development/build-system-overview.html">
+            
+                
+                    <a href="../development/build-system-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>50.</b>
+                        
+                        Build System Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="51" data-path="development/build-instructions-osx.html">
+            
+                
+                    <a href="../development/build-instructions-osx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>51.</b>
+                        
+                        Build Instructions (OS X)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="52" data-path="development/build-instructions-windows.html">
+            
+                
+                    <a href="../development/build-instructions-windows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>52.</b>
+                        
+                        Build Instructions (Windows)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="53" data-path="development/build-instructions-linux.html">
+            
+                
+                    <a href="../development/build-instructions-linux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>53.</b>
+                        
+                        Build Instructions (Linux)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="54" data-path="development/setting-up-symbol-server.html">
+            
+                
+                    <a href="../development/setting-up-symbol-server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>54.</b>
+                        
+                        Setting Up Symbol Server in debugger
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >FAQ</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="supported-chrome-command-line-switches">Supported Chrome command line switches</h1>
+<p>This page lists the command line switches used by the Chrome browser that are
+also supported by Electron. You can use
+<a href="app.html#appcommandlineappendswitchswitch-value">app.commandLine.appendSwitch</a> to append them in your app&apos;s main
+script before the <a href="app.html#event-ready">ready</a> event of <a href="app.html">app</a> module is emitted:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>).app;
+app.commandLine.appendSwitch(<span class="hljs-string">&apos;remote-debugging-port&apos;</span>, <span class="hljs-string">&apos;8315&apos;</span>);
+app.commandLine.appendSwitch(<span class="hljs-string">&apos;host-rules&apos;</span>, <span class="hljs-string">&apos;MAP * 127.0.0.1&apos;</span>);
+
+app.on(<span class="hljs-string">&apos;ready&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Your code here</span>
+});
+</code></pre>
+<h2 id="clientcertificatepath">--client-certificate=<code>path</code></h2>
+<p>Sets the <code>path</code> of client certificate file.</p>
+<h2 id="ignoreconnectionslimitdomains">--ignore-connections-limit=<code>domains</code></h2>
+<p>Ignore the connections limit for <code>domains</code> list separated by <code>,</code>.</p>
+<h2 id="disablehttpcache">--disable-http-cache</h2>
+<p>Disables the disk cache for HTTP requests.</p>
+<h2 id="remotedebuggingportport">--remote-debugging-port=<code>port</code></h2>
+<p>Enables remote debugging over HTTP on the specified <code>port</code>.</p>
+<h2 id="jsflagsflags">--js-flags=<code>flags</code></h2>
+<p>Specifies the flags passed to JS engine. It has to be passed when starting
+Electron if you want to enable the <code>flags</code> in the main process.</p>
+<pre><code class="lang-bash">$ electron --js-flags=<span class="hljs-string">&quot;--harmony_proxies --harmony_collections&quot;</span> your-app
+</code></pre>
+<h2 id="proxyserveraddressport">--proxy-server=<code>address:port</code></h2>
+<p>Use a specified proxy server, which overrides the system setting. This switch
+only affects requests with HTTP protocol, including HTTPS and WebSocket
+requests. It is also noteworthy that not all proxy servers support HTTPS and
+WebSocket requests.</p>
+<h2 id="proxybypasslisthosts">--proxy-bypass-list=<code>hosts</code></h2>
+<p>Instructs Electron to bypass the proxy server for the given semi-colon-separated
+list of hosts. This flag has an effect only if used in tandem with
+<code>--proxy-server</code>.</p>
+<p>For example:</p>
+<pre><code class="lang-javascript">app.commandLine.appendSwitch(<span class="hljs-string">&apos;proxy-bypass-list&apos;</span>, <span class="hljs-string">&apos;&lt;local&gt;;*.google.com;*foo.com;1.2.3.4:5678&apos;</span>)
+</code></pre>
+<p>Will use the proxy server for all hosts except for local addresses (<code>localhost</code>,
+<code>127.0.0.1</code> etc.), <code>google.com</code> subdomains, hosts that contain the suffix
+<code>foo.com</code> and anything at <code>1.2.3.4:5678</code>.</p>
+<h2 id="proxypacurlurl">--proxy-pac-url=<code>url</code></h2>
+<p>Uses the PAC script at the specified <code>url</code>.</p>
+<h2 id="noproxyserver">--no-proxy-server</h2>
+<p>Don&apos;t use a proxy server and always make direct connections. Overrides any other
+proxy server flags that are passed.</p>
+<h2 id="hostrulesrules">--host-rules=<code>rules</code></h2>
+<p>A comma-separated list of <code>rules</code> that control how hostnames are mapped.</p>
+<p>For example:</p>
+<ul>
+<li><code>MAP * 127.0.0.1</code> Forces all hostnames to be mapped to 127.0.0.1</li>
+<li><code>MAP *.google.com proxy</code> Forces all google.com subdomains to be resolved to
+&quot;proxy&quot;.</li>
+<li><code>MAP test.com [::1]:77</code> Forces &quot;test.com&quot; to resolve to IPv6 loopback. Will
+also force the port of the resulting socket address to be 77.</li>
+<li><code>MAP * baz, EXCLUDE www.google.com</code> Remaps everything to &quot;baz&quot;, except for
+&quot;www.google.com&quot;.</li>
+</ul>
+<p>These mappings apply to the endpoint host in a net request (the TCP connect
+and host resolver in a direct connection, and the <code>CONNECT</code> in an HTTP proxy
+connection, and the endpoint host in a <code>SOCKS</code> proxy connection).</p>
+<h2 id="hostresolverrulesrules">--host-resolver-rules=<code>rules</code></h2>
+<p>Like <code>--host-rules</code> but these <code>rules</code> only apply to the host resolver.</p>
+<h2 id="ignorecertificateerrors">--ignore-certificate-errors</h2>
+<p>Ignores certificate related errors.</p>
+<h2 id="ppapiflashpathpath">--ppapi-flash-path=<code>path</code></h2>
+<p>Sets the <code>path</code> of the pepper flash plugin.</p>
+<h2 id="ppapiflashversionversion">--ppapi-flash-version=<code>version</code></h2>
+<p>Sets the <code>version</code> of the pepper flash plugin.</p>
+<h2 id="lognetlogpath">--log-net-log=<code>path</code></h2>
+<p>Enables net log events to be saved and writes them to <code>path</code>.</p>
+<h2 id="sslversionfallbackminversion">--ssl-version-fallback-min=<code>version</code></h2>
+<p>Sets the minimum SSL/TLS version (&quot;tls1&quot;, &quot;tls1.1&quot; or &quot;tls1.2&quot;) that TLS
+fallback will accept.</p>
+<h2 id="ciphersuiteblacklistciphersuites">--cipher-suite-blacklist=<code>cipher_suites</code></h2>
+<p>Specifies comma-separated list of SSL cipher suites to disable.</p>
+<h2 id="disablerendererbackgrounding">--disable-renderer-backgrounding</h2>
+<p>Prevents Chromium from lowering the priority of invisible pages&apos; renderer
+processes.</p>
+<p>This flag is global to all renderer processes, if you only want to disable
+throttling in one window, you can take the hack of
+<a href="https://github.com/atom/atom/pull/9485/files" target="_blank">playing silent audio</a>.</p>
+<h2 id="enablelogging">--enable-logging</h2>
+<p>Prints Chromium&apos;s logging into console.</p>
+<p>This switch can not be used in <code>app.commandLine.appendSwitch</code> since it is parsed
+earlier than user&apos;s app is loaded, but you can set the <code>ELECTRON_ENABLE_LOGGING</code>
+environment variable to achieve the same effect.</p>
+<h2 id="vloglevel">--v=<code>log_level</code></h2>
+<p>Gives the default maximal active V-logging level; 0 is the default. Normally
+positive values are used for V-logging levels.</p>
+<p>This switch only works when <code>--enable-logging</code> is also passed.</p>
+<h2 id="vmodulepattern">--vmodule=<code>pattern</code></h2>
+<p>Gives the per-module maximal V-logging levels to override the value given by
+<code>--v</code>. E.g. <code>my_module=2,foo*=3</code> would change the logging level for all code in
+source files <code>my_module.*</code> and <code>foo*.*</code>.</p>
+<p>Any pattern containing a forward or backward slash will be tested against the
+whole pathname and not just the module. E.g. <code>*/foo/bar/*=2</code> would change the
+logging level for all code in the source files under a <code>foo/bar</code> directory.</p>
+<p>This switch only works when <code>--enable-logging</code> is also passed.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../api/process.html" class="navigation navigation-prev " aria-label="Previous page: Process Object"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../api/environment-variables.html" class="navigation navigation-next " aria-label="Next page: Environment Variables"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-baidu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"baidu":{"token":"acfc5cd60db044270ff996429917c2b7"},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?acfc5cd60db044270ff996429917c2b7';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+    </body>
+    
+</html>
