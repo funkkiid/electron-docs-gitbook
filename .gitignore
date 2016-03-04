@@ -13,4 +13,4 @@ node_modules
 doc
 
 .publish
-sources
+sources/**/*.*
