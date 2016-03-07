@@ -1,5 +1,7 @@
 # Electron 官方文档多语言电子书
 
+**Note: Deprecated, Please get it from: https://github.com/doc-ebooks/electron-docs-gitbook**
+
 版本： 0.1.0  
 时间： 2016-03-04
 
