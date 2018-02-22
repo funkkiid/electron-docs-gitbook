@@ -1,3 +1,4 @@
+* [Introduction](README.md)
 * 常见问题
   * [Electron 常见问题](faq/electron-faq.md)
 * 向导
